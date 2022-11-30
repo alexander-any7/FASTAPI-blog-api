@@ -1,0 +1,10 @@
+__pycache__
+venv/
+.env
+command.txt
+notes.txt
+.vscode
+.idea
+main_sql.py
+tests/test_calc.py
+New folder/
