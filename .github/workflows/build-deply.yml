@@ -7,14 +7,14 @@ jobs:
     environment: 
     name: Testing
     env:
-      DATABASE_HOSTNAME: ${{DATABASE_HOSTNAME}}
-      DATABASE_PORT: ${{DATABASE_PORT}}
-      DATABASE_PASSWORD: ${{DATABASE_PASSWORD}}
-      DATABASE_NAME: ${{DATABASE_NAME}}
-      DATABASE_USERNAME: ${{DATABASE_USERNAME}}
-      SECRET_KEY: ${{SECRET_KEY}}
-      ALGORITHM: ${{ALGORITHM}}
-      ACCESS_TOKEN_EXPIRES_MINUTES: ${{ACCESS_TOKEN_EXPIRES_MINUTES}}
+      DATABASE_HOSTNAME: ${{secrets.DATABASE_HOSTNAME}}
+      DATABASE_PORT: ${{secrets.DATABASE_PORT}}
+      DATABASE_PASSWORD: ${{secrets.DATABASE_PASSWORD}}
+      DATABASE_NAME: ${{secrets.DATABASE_NAME}}
+      DATABASE_USERNAME: ${{secrets.DATABASE_USERNAME}}
+      SECRET_KEY: ${{secrets.SECRET_KEY}}
+      ALGORITHM: ${{secrets.ALGORITHM}}
+      ACCESS_TOKEN_EXPIRES_MINUTES: ${{secrets.ACCESS_TOKEN_EXPIRES_MINUTES}}
     runs-on: windows-latest
     steps:
       - name: pulling git repo
