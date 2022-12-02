@@ -7,3 +7,4 @@ notes.txt
 .idea
 main_sql.py
 tests/test_calc.py
+.pytest_cache
