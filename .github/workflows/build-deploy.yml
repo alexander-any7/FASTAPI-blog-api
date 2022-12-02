@@ -3,7 +3,7 @@ name: Build and Deploy Flow
 on: [push, pull_request]
 
 jobs:
-  job2:
+  build:
     environment: 
       name: Testing
     env:
@@ -46,3 +46,12 @@ jobs:
         run: |
           pip install pytest
           pytest
+  
+  
+  deploy:
+    runs-on: ubuntu-latest
+    needs: [build]
+
+    steps:
+      - name: deploying to production
+        run: echo "going to deploy to production"
