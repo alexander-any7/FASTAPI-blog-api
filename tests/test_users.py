@@ -5,12 +5,11 @@ from tests.conftest import client
 import pytest
 
 
-def test_root(client):
-    response = client.get("/")
-    assert response.status_code == 200
-    print(response.json().get('message'))
-    assert response.json().get('message') == 'Hello World!'
-
+# def test_root(client):
+#     response = client.get("/")
+#     assert response.status_code == 200
+#     print(response.json().get('message'))
+#     assert response.json().get('message') == 'Hello World!'
 
 def test_create_user(client):
     response = client.post('/users/', json={"email":"test@gmail.com", "password":"test"})
