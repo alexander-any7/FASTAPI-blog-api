@@ -16,7 +16,7 @@ $ pip install -r requirements.txt
 ```
 
 ### Environment Configurations
-Create a .env file with these configurations:
+Create a `.env` file with these configurations:
 ```
 DATABASE_HOSTNAME=...
 DATABASE_PORT=...
