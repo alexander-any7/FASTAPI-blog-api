@@ -1,4 +1,4 @@
-# FASTAPI
+# FastAPI
 
 A blog API that handles basic CRUD operations on users, posts, and likes.
 
