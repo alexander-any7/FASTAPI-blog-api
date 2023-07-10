@@ -1,4 +1,4 @@
-# FastAPI
+# FastAPI [![Build and Deploy Flow](https://github.com/Anyaegbunam-Alexander/FASTAPI/actions/workflows/build-deploy.yml/badge.svg)](https://github.com/Anyaegbunam-Alexander/FASTAPI/actions/workflows/build-deploy.yml)
 
 A blog API that handles basic CRUD operations on users, posts, and likes.
 
